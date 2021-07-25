@@ -81,7 +81,7 @@ body{
     cursor: pointer;
 }
 
-.JiiH li:last-of-type{
+.JiiH .entour{
     border: 1px solid blanchedalmond;
 }
 
@@ -95,4 +95,8 @@ body{
     color: rgb(173, 137, 93);
     text-align: center;
     letter-spacing: 30px;
+}
+
+a{
+    text-decoration: none;
 }
