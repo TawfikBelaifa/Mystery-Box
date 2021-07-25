@@ -55,7 +55,18 @@
     </div>
 
     <script type="text/x-template" id="accueil">
-        <h1>c'est juste le menu</h1>
+
+    </script>
+
+    <script type="text/x-template" id="tous">
+        <div  class="ctn_Tous">
+            <div v-for="api in Api">
+                <div>{{api.price}}</div><br>
+                <div>{{api.producName}}</div><br>
+                <div>{{api.description}}</div><br>
+                <div>{{api.producS_Name}}</div><br>
+            </div>
+        </div>
     </script>
 
     <!-- Importation de jQuery -->

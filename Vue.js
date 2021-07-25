@@ -7,10 +7,27 @@ const API = [
 const Accueil = {
     template: '#accueil', 
     name: 'Accueil',
+    data: () => {
+        return {
+            Api: API,
+        }
+    }
+}
+
+const Tous = {
+    template: '#tous', 
+    name: 'Tous',
+    data: () => {
+        return {
+            Api: API,
+        }
+    }
 }
 
 const routes = [
     {path: '/', component: Accueil},
+    {path: '/Tous', component: Tous},
+
     
 ]
 
