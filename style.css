@@ -11,7 +11,8 @@ body{
     background-color: #fff;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: linear-gradient( 
-180deg
-, transparent 0,rgba(0,0,0,-1.1) 1%, rgba(0,0,0,.5) 1%, rgba(0,0,0,.61) 8%, rgba(0,0,0,.8) 95%, rgba(0,0,0,.8));
+}
+
+#app_prise{
+    width: 100vw;
 }
