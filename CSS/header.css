@@ -2,11 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Merienda&family=Tangerine&display=swap');
-body{
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap');
 
 .header{
     width: 100vw;
@@ -63,6 +59,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 .JiiH{
@@ -103,4 +100,56 @@ a{
 
 .ctn{
     display: grid;
+}
+
+.contain-accueil{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-ACC{
+    display: grid;
+    grid-template-columns: 50px 100px 1fr;
+    grid-template-rows: 50px 50px 100px 20px 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.img-HY img{
+    width: 100%;
+}
+
+.top-ACC .img-HY{
+    max-width: 570px;
+    width: 570px;
+    grid-area: 1/4/6/4;
+}
+
+.new{
+    grid-area: 1/1/5/4;
+    font-size: 23vmin;
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+.sale{
+    grid-area: 2/2/3/4;
+    font-size: 6.5vmin;
+    color: #d96528;
+}
+
+.collection{
+    grid-area: 3/3/4/4;
+    font-size: 8.5vmin;
+}
+
+.details{
+    grid-area: 4/2/5/4;
+    font-size: 2vmin;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: 'Encode Sans SC', sans-serif;
+    letter-spacing: 10px;
 }
