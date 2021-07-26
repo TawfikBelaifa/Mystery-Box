@@ -237,7 +237,7 @@ a{
 }
 
 .Hujk{
-    width: 1038px;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -250,10 +250,12 @@ a{
     background-image: linear-gradient( 
         357deg
          ,transparent 0,rgba(0,0,0,-1.1) 1%, rgba(0,0,0,.5) 1%, rgba(0,0,0,.61) 8%, rgba(0,0,0,.8) 95%, rgba(0,0,0,.8)), url(../Logo-home/1.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1038px;
+    min-height: 665px;
 }
 
 .Hujk_1 img{
@@ -264,10 +266,22 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    PADDING: 10px;
+    justify-content: space-around;
+    PADDING: 10px 30px;
     border: 1px solid burlywood;
-    background: rgba(255, 235, 205, .3)
+    background: rgba(255, 235, 205, .3);
+    height: 370px;
+    position: relative;
+}
+
+.Hujk_1:before{
+    content: '';
+    height: 100px;
+    width: 1px;
+    background: blanchedalmond;
+    position: absolute;
+    top: 100%;
+    left: 50%;
 }
 
 .Hujk_1 .name_{
