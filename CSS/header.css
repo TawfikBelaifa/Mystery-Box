@@ -267,6 +267,7 @@ a{
     justify-content: center;
     PADDING: 10px;
     border: 1px solid burlywood;
+    background: rgba(255, 235, 205, .3)
 }
 
 .Hujk_1 .name_{
@@ -279,7 +280,7 @@ a{
 .Hujk_1 .prix_ {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
-    color: chocolate;
+    color: white;
 }
 
 .Voir_arct{
@@ -291,11 +292,11 @@ a{
     padding: 10px 30px;
     margin: 10px 0;
     background: blanchedalmond;
-    border: navajowhite;
     width: 100%;
     font-family: 'Julius Sans One', sans-serif;
     cursor: pointer;
     transition: .3s;
+    border: 1px solid #000;
 }
 
 .btn_vue_artc:hover{
