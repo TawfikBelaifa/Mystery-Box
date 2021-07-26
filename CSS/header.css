@@ -235,3 +235,84 @@ a{
 .addBox-shadow{
     background: rgba(0,0,0,1);
 }
+
+.Hujk{
+    width: 1038px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 80px 0;
+    margin: 69px 0;
+    position: relative;
+    background-image: linear-gradient( 
+        357deg
+         ,transparent 0,rgba(0,0,0,-1.1) 1%, rgba(0,0,0,.5) 1%, rgba(0,0,0,.61) 8%, rgba(0,0,0,.8) 95%, rgba(0,0,0,.8)), url(../Logo-home/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+}
+
+.Hujk_1 img{
+    width: 150px;
+}
+
+.Hujk_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    PADDING: 10px;
+    border: 1px solid burlywood;
+}
+
+.Hujk_1 .name_{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 19px;
+    margin: 10px 0;
+    color: blanchedalmond;
+}
+
+.Hujk_1 .prix_ {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.Voir_arct{
+    width: 100%;
+
+}
+
+.Voir_arct .btn_vue_artc{
+    padding: 10px 30px;
+    margin: 10px 0;
+    background: blanchedalmond;
+    border: navajowhite;
+    width: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn_vue_artc:hover{
+    opacity: .5;
+}
+
+.Hujk::before{
+    content: 'Produit Populaires';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translate(-49.9%);
+    height: auto;
+    width: auto;
+    border: 1px solid #000;
+    color: #000;
+    background: blanchedalmond;
+    padding: 10px 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
