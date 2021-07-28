@@ -1,0 +1,223 @@
+.Hujk{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 80px 0;
+    margin: 69px 0;
+    position: relative;
+    background-image: linear-gradient( 
+        357deg
+         ,transparent 0,rgba(0,0,0,-1.1) 1%, rgba(0,0,0,.5) 1%, rgba(0,0,0,.61) 8%, rgba(0,0,0,.8) 95%, rgba(0,0,0,.8)), url(../../Logo-home/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1038px;
+    min-height: 665px;
+}
+
+.Hujk_1 img{
+    width: 150px;
+}
+
+.Hujk_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    PADDING: 10px 30px;
+    height: 345px;
+    position: relative;
+}
+
+.container-3D:before{
+    content: '';
+    height: 100px;
+    width: 1px;
+    background: blanchedalmond;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+}
+
+.Hujk_1 .name_{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 19px;
+    margin: 10px 0;
+    color: blanchedalmond;
+}
+
+.Hujk_1 .prix_ {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.Voir_arct{
+    width: 100%;
+
+}
+
+.Voir_arct .btn_vue_artc{
+    padding: 10px 30px;
+    margin: 10px 0;
+    background: blanchedalmond;
+    width: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #000;
+}
+
+.btn_vue_artc:hover{
+    opacity: .5;
+}
+
+.Hujk::before{
+    content: 'Produit Populaires';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translate(-49.9%);
+    height: auto;
+    width: auto;
+    border: 1px solid #000;
+    color: #000;
+    background: blanchedalmond;
+    padding: 10px 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* */
+
+.container-3D{
+    height: 445px;
+    width: 300px;
+    perspective: 1300px;
+}
+
+.front-contain, .back-contain{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    transform: translateZ(100px);
+    backface-visibility: hidden;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.JHgb{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+    transition: 2s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.container-3D:hover .JHgb:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    PADDING: 10px 30px;
+    border: 1px solid burlywood;
+    background: rgba(255, 235, 205, .3);
+    height: 370px;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+
+ .back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    PADDING: 10px 30px;
+    border: 1px solid burlywood;
+    background: rgba(255, 235, 205, .3);
+    
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 1;
+    transform: rotateY(180deg);
+    height: 445px;
+    height: 370px;
+}
+
+
+ .front .name{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+.front .work{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.back .Work{
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.back .text, .back .taile{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.color{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.color div{
+    height: 25px;
+    width: 25px;
+    border:none;
+    border-radius: 50%;
+}
+.color .red{
+    background: crimson;
+}
+
+.color .green{
+    background: green;
+}
+
+.color .Blue{
+    background: blue;
+}
+
+.color .White{
+    background: white;
+}
+
+.color .Black{
+    background: black;
+}
