@@ -268,19 +268,17 @@ a{
     align-items: center;
     justify-content: space-around;
     PADDING: 10px 30px;
-    border: 1px solid burlywood;
-    background: rgba(255, 235, 205, .3);
     height: 370px;
     position: relative;
 }
 
-.Hujk_1:before{
+.container-3D:before{
     content: '';
     height: 100px;
     width: 1px;
     background: blanchedalmond;
     position: absolute;
-    top: 100%;
+    top: 83%;
     left: 50%;
 }
 
@@ -331,3 +329,94 @@ a{
     padding: 10px 20px;
     font-family: 'Julius Sans One', sans-serif;
 }
+
+/* */
+
+.container-3D{
+    height: 445px;
+    width: 300px;
+    perspective: 1300px;
+}
+
+.front-contain, .back-contain{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    transform: translateZ(100px);
+    backface-visibility: hidden;
+    flex-direction: column;
+    
+}
+
+.JHgb{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+    transition: 2s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.container-3D:hover .JHgb:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    PADDING: 10px 30px;
+    border: 1px solid burlywood;
+    background: rgba(255, 235, 205, .3);
+    height: 370px;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+
+ .back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    PADDING: 10px 30px;
+    border: 1px solid burlywood;
+    background: rgba(255, 235, 205, .3);
+    
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 1;
+    transform: rotateY(180deg);
+    height: 445px;
+    height: 370px;
+}
+
+
+ .front .name{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+.front .work{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.back .Work{
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
