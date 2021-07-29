@@ -97,13 +97,13 @@
                 </div>
             </div>
 
-            <div class="Hujk">
+            <div class="Hujk prouduit-populaire">
                 <div class="container-3D" v-for="dataUses in dataUse">
                     <div class="JHgb">
                         <div class="front">
                             <div class="front-contain">
                                 <div class="Hujk_1">
-                                    <div class="img_"><img src="./Produit/Men/Haut/1.png" alt=""></div>
+                                    <div class="img_"><img :src="dataUses.img" alt=""></div>
                                     <div class="name_">{{dataUses.name}}</div>
                                     <div class="prix_">{{dataUses.price}}</div>
                                     <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
@@ -113,8 +113,7 @@
                         <div class="back">
                             <div class="back-contain">
                                 <div class="Work">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Aliquam vehicula, risus eu varius rutrum
+                                    {{dataUses.description}}
                                 </div>
                                 <hr>
                                 <div class="contact">
@@ -136,7 +135,6 @@
                     </div>
                 </div>
 
-                
             </div>
         </div> 
     </script>

@@ -8,7 +8,9 @@ const API = [
         "review": "productize virtual markets",
         "starrating": 3,
         "price": 50.4,
-        "img": "1.jpg"
+        "img": "./Produit/Men/Montre/1.png",
+        "cat": "",
+        "aprendre": true
     },
     {
         "id": "2",
@@ -19,7 +21,8 @@ const API = [
         "review": "deploy efficient mindshare",
         "starrating": 4,
         "price": 33.99,
-        "img": "2.jpg"
+        "img": "./Produit/Men/Haut/1.png",
+        "aprendre": true
     },
     {
         "id": "3",
@@ -30,7 +33,8 @@ const API = [
         "review": "mesh sticky content",
         "starrating": 3,
         "price": 102.99,
-        "img": "3.jpg"
+        "img": "./Produit/Men/Haut/2.png",
+        "aprendre": true
     },
     {
         "id": "4",
@@ -57,7 +61,8 @@ const API = [
         "review": "integrate extensible methodologies",
         "starrating": 5,
         "price": 30.99,
-        "img": "5.png"
+        "img": "5.png",
+        
     },
     {
         "id": "6",
@@ -416,7 +421,7 @@ const Accueil = {
         }
     },
     mounted() {
-        this.dataUse = API.filter((API) => API.id <= 3)
+        this.dataUse = API.filter((API) => API.aprendre == true )
     }
 }
 
