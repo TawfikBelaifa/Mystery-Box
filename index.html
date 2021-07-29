@@ -98,14 +98,14 @@
             </div>
 
             <div class="Hujk">
-                <div class="container-3D">
+                <div class="container-3D" v-for="dataUses in dataUse">
                     <div class="JHgb">
                         <div class="front">
                             <div class="front-contain">
                                 <div class="Hujk_1">
                                     <div class="img_"><img src="./Produit/Men/Haut/1.png" alt=""></div>
-                                    <div class="name_">Duis vitae</div>
-                                    <div class="prix_">109£</div>
+                                    <div class="name_">{{dataUses.name}}</div>
+                                    <div class="prix_">{{dataUses.price}}</div>
                                     <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
                                 </div>
                             </div>
@@ -136,77 +136,7 @@
                     </div>
                 </div>
 
-                <div class="container-3D">
-                    <div class="JHgb">
-                        <div class="front">
-                            <div class="front-contain">
-                                <div class="Hujk_1">
-                                    <div class="img_"><img src="./Produit/Men/Haut/2.png" alt=""></div>
-                                    <div class="name_">Duis vitae</div>
-                                    <div class="prix_">109£</div>
-                                    <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="back-contain">
-                                <div class="text">
-                                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugit!
-                                </div>
-                                
-                                <div class="taile">
-                                    XS S M L XL XXL
-                                </div>
-                               
-                               
-                                <div class="color">
-                                    <div class="red"></div>
-                                    <div class="green"></div>
-                                    <div class="Blue"></div>
-                                    <div class="White"></div>
-                                    <div class="Black"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-3D">
-                    <div class="JHgb">
-                        <div class="front">
-                            <div class="front-contain">
-                                <div class="Hujk_1">
-                                    <div class="img_"><img src="./Produit/Men/montre/1.png" alt=""></div>
-                                    <div class="name_">Duis vitae</div>
-                                    <div class="prix_">109£</div>
-                                    <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="back-contain">
-                                <div class="Work">
-                                    Ingeneer Web
-                                </div>
-                                <hr>
-                                <div class="contact">
-                                    <i class="fab fa-facebook-square"></i>
-                                    <i class="fab fa-instagram"></i>
-                                    <i class="fab fa-linkedin"></i>
-                                    <i class="fab fa-github-square"></i>
-                                    <i class="fab fa-twitter"></i>
-                                </div>
-                                <hr>
-                                <div class="localisation">
-                                    <i class="fas fa-map-marker-alt"></i> Paris, France
-                                </div>
-                                <div class="date">
-                                    <i class="far fa-registered"></i> <span>TB</span>  2021
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div> 
     </script>
@@ -235,8 +165,11 @@
     <script src="https://unpkg.com/vue-cookies@1.5.12/vue-cookies.js"></script>
 
     <!-- Imporation de interfaces Vue.js -->
+
     <script src="./Vue.js"></script>
     <script src="./App.js"></script>
+    
+
 
 </body>
 
