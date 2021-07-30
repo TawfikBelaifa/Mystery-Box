@@ -11,48 +11,7 @@
 
 <body>
     <div id="app_prise">
-        <header class="header">
-            <div class="top">
-                <div class="mini-nmeSite">
-                    <h1>Mystery Box</h1>
-                </div>
-                <nav class="navigation">
-                    <ul class="JiiH">
-                        <router-link to="/">
-                            <li>Accueil</li>
-                        </router-link>
-                        <router-link to="/Tous">
-                            <li>Tous</li>
-                        </router-link>
-                        <router-link to="/Femmes">
-                            <li>Femmes</li>
-                        </router-link>
-                        <router-link to="/Homme">
-                            <li>Homme</li>
-                        </router-link>
-                        <router-link to="/Panier">
-                            <li class="entour">Panier</li>
-                        </router-link>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="center-Head">
-                <div class="wel">Welcome</div>
-                <div class="nmeSite">
-                    <h1>Mystery Box</h1>
-                </div>
-                <div class="slogan">Luxury specialty</div>
-            </div>
-            <div class="bottom_head">
-                <div>Hauts</div>
-                <div>Chaussures</div>
-                <div>Montres</div>
-                <div>Bas</div>
-                <div>Polo</div>
-                <div>Chemises</div>
-            </div>
-        </header>
+        
 
         <div class="containVue">
             <router-view></router-view>
@@ -62,6 +21,48 @@
 
     <script type="text/x-template" id="accueil">
         <div class="contain-accueil">
+            <header class="header">
+                <div class="top">
+                    <div class="mini-nmeSite">
+                        <h1>Mystery Box</h1>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="JiiH">
+                            <router-link to="/">
+                                <li>Accueil</li>
+                            </router-link>
+                            <router-link to="/Tous">
+                                <li>Tous</li>
+                            </router-link>
+                            <router-link to="/Femmes">
+                                <li>Femmes</li>
+                            </router-link>
+                            <router-link to="/Homme">
+                                <li>Homme</li>
+                            </router-link>
+                            <router-link to="/Panier">
+                                <li class="entour">Panier</li>
+                            </router-link>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="center-Head">
+                    <div class="wel">Welcome</div>
+                    <div class="nmeSite">
+                        <h1>Mystery Box</h1>
+                    </div>
+                    <div class="slogan">Luxury specialty</div>
+                </div>
+                <div class="bottom_head">
+                    <div>Hauts</div>
+                    <div>Chaussures</div>
+                    <div>Montres</div>
+                    <div>Bas</div>
+                    <div>Polo</div>
+                    <div>Chemises</div>
+                </div>
+            </header>
             <div class="top-ACC">
                 <div class="img-HY"><img src="./Produit/Men/sneakers/2.png" alt="New shoes"></div>
                 <div class="new">New</div>
@@ -176,6 +177,7 @@
 
     <script type="text/x-template" id="tous">
         <div  class="ctn_Tous">
+            
                 <div class="container-3D" v-for="Api in Api">
                     <div class="JHgb">
                         <div class="front">
