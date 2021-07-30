@@ -89,7 +89,7 @@
             </div>
             <div class="center_2">
                 <div class="top-ACC">
-                    <div class="img-HY"><img src="./Produit/Men/sneakers/1.png" alt="New shoes"></div>
+                    <div class="img-HY"><img src="./Produit/Men/Haut/2.png" alt="New shoes"></div>
                     <div class="new">-30%</div>
                     <div class="sale">Ventes Partout</div>
                     <div class="collection">L'ete</div>
@@ -176,12 +176,37 @@
 
     <script type="text/x-template" id="tous">
         <div  class="ctn_Tous">
-            <div v-for="api in Api">
-                <div>{{api.price}}</div><br>
-                <div>{{api.producName}}</div><br>
-                <div>{{api.description}}</div><br>
-                <div>{{api.producS_Name}}</div><br>
-            </div>
+                <div class="container-3D" v-for="Api in Api">
+                    <div class="JHgb">
+                        <div class="front">
+                            <div class="front-contain">
+                                <div class="Hujk_1">
+                                    <div class="img_"><img :src="Api.img" alt=""></div>
+                                    <div class="name_">{{Api.name}}</div>
+                                    <div class="prix_">{{Api.price}}£</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="back-contain">
+                                <div class="contain-start">
+                                    <span v-for="n in 5" class="" :class="{bgspan: n <= Api.starrating }"></span>
+                                </div>
+                                <div class="Work">
+                                    {{Api.description}}
+                                </div>
+                                <div class="contact">
+                                    autre couleur : {{Api.color}}
+                                </div>
+                                <div class="localisation">
+                                    <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
         </div>
     </script>
 
