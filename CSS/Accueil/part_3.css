@@ -148,8 +148,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    PADDING: 10px 30px;
+    justify-content: flex-start;
+    PADDING: 40px 30px;
     border: 1px solid burlywood;
     background: rgba(255, 235, 205, .3);
     
@@ -177,16 +177,27 @@
 
 
 .back .Work{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
-    margin-top: 40px;
-    font-family: 'Cinzel Decorative', cursive;
+    margin: 10px 0;
+    font-family: 'Julius Sans One', sans-serif;
+    border-bottom: 1px solid blanchedalmond;
+    border-top: 1px solid blanchedalmond;
+    padding: 15px 0;
+    color: blanchedalmond;
 }
 
 .back .text, .back .taile{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 17px;
     text-align: center;
+}
+
+.back .contact{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .color{
@@ -220,4 +231,23 @@
 
 .color .Black{
     background: black;
+}
+
+.back-contain span{
+    height: 15px;
+    width: 15px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border: 1px solid #000;
+}
+
+.bgspan{
+    background-color: lightgoldenrodyellow;
+}
+
+.contain-start {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-justify: distribute;
 }

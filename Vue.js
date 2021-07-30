@@ -15,7 +15,7 @@ const API = [
     {
         "id": "2",
         "color": "Puce",
-        "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+        "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis",
         "gender": "Male",
         "name": "Addy Alldre",
         "review": "deploy efficient mindshare",

@@ -105,25 +105,23 @@
                                 <div class="Hujk_1">
                                     <div class="img_"><img :src="dataUses.img" alt=""></div>
                                     <div class="name_">{{dataUses.name}}</div>
-                                    <div class="prix_">{{dataUses.price}}</div>
+                                    <div class="prix_">{{dataUses.price}}£</div>
                                     <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
                                 </div>
                             </div>
                         </div>
                         <div class="back">
                             <div class="back-contain">
+                                <div class="contain-start">
+                                    <span v-for="n in 5" class="" :class="{bgspan: n <= dataUses.starrating }"></span>
+                                </div>
+                                
                                 <div class="Work">
                                     {{dataUses.description}}
                                 </div>
-                                <hr>
                                 <div class="contact">
-                                    <i class="fab fa-facebook-square"></i>
-                                    <i class="fab fa-instagram"></i>
-                                    <i class="fab fa-linkedin"></i>
-                                    <i class="fab fa-github-square"></i>
-                                    <i class="fab fa-twitter"></i>
+                                    autre couleur : {{dataUses.color}}
                                 </div>
-                                <hr>
                                 <div class="localisation">
                                     <i class="fas fa-map-marker-alt"></i> Paris, France
                                 </div>
