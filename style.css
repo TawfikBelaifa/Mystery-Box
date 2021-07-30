@@ -1,6 +1,8 @@
 @import url('./CSS/Accueil/header.css');
 @import url('./CSS/Accueil/part_3.css');
 @import url('./CSS/Accueil/Pub_1.css');
+@import url('./CSS/Accueil/part_4.css');
+
 
 *, :after, :before{
     box-sizing: border-box;

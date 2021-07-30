@@ -106,7 +106,7 @@
                                     <div class="img_"><img :src="dataUses.img" alt=""></div>
                                     <div class="name_">{{dataUses.name}}</div>
                                     <div class="prix_">{{dataUses.price}}£</div>
-                                    <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,6 @@
                                 <div class="contain-start">
                                     <span v-for="n in 5" class="" :class="{bgspan: n <= dataUses.starrating }"></span>
                                 </div>
-                                
                                 <div class="Work">
                                     {{dataUses.description}}
                                 </div>
@@ -123,16 +122,22 @@
                                     autre couleur : {{dataUses.color}}
                                 </div>
                                 <div class="localisation">
-                                    <i class="fas fa-map-marker-alt"></i> Paris, France
-                                </div>
-                                <div class="date">
-                                    <i class="far fa-registered"></i> <span>TB</span>  2021
+                                    <div class="Voir_arct"><button class="btn_vue_artc">Voir article</button></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="kkOJ">
+                <div class="KKKlo">
+                    <div class="llHYh">
+                        <div class="title"><h1>"Mastery-box vous propose tout un panel de choix, et tous les styles sont avancés quelqu'en soit les saisons"</h1></div>
+                        <div class="logo">Mastery-box</div>
+                    </div>
+                    <div class="Pkh">If you have a taste for luxury</div>
+                </div>
             </div>
         </div> 
     </script>
