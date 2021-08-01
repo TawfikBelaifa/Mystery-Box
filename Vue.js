@@ -431,6 +431,16 @@ const Tous = {
     data: () => {
         return {
             Api: API,
+            price_choice:0,
+        }
+    },
+    computed: {
+        Filtredprice(){
+
+            $('.vlr span').html(this.price_choice)
+            $('.vlr span').css('left', ((this.price_choice / 2) * 0.8 ) + "%")
+            return this.Api.filter((Api) =>  Api.price >= this.price_choice)
+			
         }
     }
 }

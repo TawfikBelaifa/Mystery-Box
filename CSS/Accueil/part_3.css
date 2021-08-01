@@ -113,6 +113,7 @@
     perspective: 1300px;
     padding: 0px 20px 0 20px;
     border: 1px solid;
+    transition: 1s all;
 }
 
 .front-contain, .back-contain{

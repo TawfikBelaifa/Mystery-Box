@@ -11,7 +11,7 @@
 
 <body>
     <div id="app_prise">
-        
+
 
         <div class="containVue">
             <div class="top">
@@ -142,10 +142,6 @@
 
             <section class="footer">
                 <div class="blc-1">
-                  <!-- <div class="lft">
-                    <div class="name">Tawfik</div>
-                    <div class="job">Apprenti Developpeur Java - Java EE</div>
-                  </div> -->
                   <div class="center">
                     <ul class="UHj">
                       <li>À propos de</li>
@@ -175,9 +171,9 @@
     </script>
 
     <script type="text/x-template" id="tous">
-        <div  class="ctn_Tous">
-            
-                <div class="container-3D" v-for="Api in Api">
+        <div class="contain_Polk">
+            <div  class="ctn_Tous">
+                <div class="container-3D" v-for="Api in Filtredprice">
                     <div class="JHgb">
                         <div class="front">
                             <div class="front-contain">
@@ -207,8 +203,29 @@
                         </div>
                     </div>
                 </div>
+                
+        </div>
+        <div class="slid_">
+            <div class="Lmpl">
+                <div class="vlr">
+                    <span>0</span>
+                </div>
+                <div class="kOpmk">
+                    <div class="left">
+                        0
+                    </div>
+                    <input type="range" min="0" max="200" step="10" class="range_slid" v-model="price_choice">
+                    <div class="right">
+                        200
+                    </div>
+                </div>
+                
+            </div>
+            
             
         </div>
+        </div>
+        
     </script>
 
     <!-- Inclusion font-awsome for icon  -->
@@ -227,7 +244,7 @@
 
     <script src="./Vue.js"></script>
     <script src="./App.js"></script>
-    
+
 
 
 </body>
