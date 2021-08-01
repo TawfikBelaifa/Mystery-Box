@@ -438,7 +438,7 @@ const Tous = {
         Filtredprice(){
 
             $('.vlr span').html(this.price_choice)
-            $('.vlr span').css('left', ((this.price_choice / 2) * 0.8 ) + "%")
+            $('.vlr span').css('left', ((this.price_choice / 2) ) + "%")
             return this.Api.filter((Api) =>  Api.price >= this.price_choice)
 			
         }
